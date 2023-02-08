@@ -12,9 +12,9 @@ import org.testng.annotations.Test;
 public class OrderRideTest extends TestBase{
     public final String DEPARTURE = "Strazilovska 5";
     public final String DESTINATION = "Narodnog fronta 20";
-    public final String SCHEDULED_TIME = "19:00";
+    public final String SCHEDULED_TIME = "23:00";
 
-    public final String INVALID_TIME = "23:00";
+    public final String INVALID_TIME = "15:00";
     public final boolean PET = false;
     public final boolean KID = false;
     public final String VEHICLE_TYPE = "Standard";

@@ -1,6 +1,7 @@
 package org.example.selenium.tests;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.opera.OperaDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
@@ -10,8 +11,8 @@ public class TestBase {
 
     @BeforeSuite
     public void initializeWebDriver() {
-        System.setProperty("webdriver.opera.driver", "E:\\xyz\\TEST\\operadriver_win64\\operadriver.exe");
-        driver = new OperaDriver();
+        System.setProperty("webdriver.chrome.driver", "chromedriver");
+        driver = new ChromeDriver();
 
         //TODO change driver if needed
 
